@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tugas</title>
+</head>
+<body>
+	<form  method="post">
+		<table align="center">
+			<tr>
+				<td>Nama Pelanggan</td> <td>
+					<input type="text" name="" onkeydown="return Nama(event)" onkeypress="if(this.value.length==31){
+						alert('batas')
+						return false 
+					} 
+">
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td><td>
+					<input type="email" name="" required="">
+				</td>
+			</tr>
+			<tr>
+				<td>Jam Keberangkatan</td><td>
+					<input type="" name="">
+				</td>
+			</tr>
+			<tr>
+				<td>Tujuan Keberangkatan</td><td>
+					<input type="text" name="" required="" required="">
+				</td>
+			</tr>
+			<tr>
+				<td>Jumlah Tiket</td><td>
+					<input type="number" name="" onkeydown="return JumlahTiket(event)" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false">
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<button type="submit">Save</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$('#number').bind("cut copy paste drag drop", function(e) {
+			e.preventDefault();
+		});     
+	});
+	function Nama(evt) {
+		var charCode = (evt.which) ? evt.which : event.keyCode
+		if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
+			return false;
+		return true;
+	}
+	function JumlahTiket(phn){
+    var charPhn = (phn.which) ? phn.which : event.keyCode;
+    if (charPhn > 31 && (charPhn < 48 || charPhn > 57))
+        return false;
+    return true;
+}
+</script>

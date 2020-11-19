@@ -1,0 +1,243 @@
+#submit-btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background: #cd853f;
+  color: #ffdead;
+}
+
+#submit-btn:hover {
+  background: #fbfbfb;
+  color: #cd853f;
+  cursor: pointer;
+  border: 1px solid #cd853f;
+}
+#h1-chat {
+  margin: 5rem auto 5rem auto;
+  padding-top: 100px;
+}
+
+#h1-kurs {
+  margin: 5rem auto 5rem auto;
+  padding-top: 100px;
+}
+
+#h1-success {
+  margin: 5rem auto 5rem auto;
+  padding-top: 100px;
+}
+
+
+#card {
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 410px;
+  margin: 7rem auto 7rem auto;
+  width: 329px;
+  padding: 15px;
+}
+#card-kurs {
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 150x;
+  margin: 5rem auto 5rem auto;
+  width: 1000px;
+  padding: 15px;
+}
+
+#card-success {
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 125px;
+  margin: 5rem auto 5rem auto;
+  width: 1000px;
+  padding: 15px;
+}
+
+#card-chat {
+  background: #fbfbfb;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 90px;
+  margin: 5rem auto 7rem auto;
+  width: 900px;
+  text-align: center;
+  padding: 15px;;
+}
+
+#td-kurs{
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+
+}
+
+body {
+  background: -webkit-linear-gradient(bottom, #ffdead, #ffdead);
+  background-repeat: no-repeat;
+}
+body {
+  background: -webkit-linear-gradient(bottom, #ffdead, #ffdead);
+  background-repeat: no-repeat;
+}
+
+#body-kurs {
+  background: #ffdead;
+}
+
+#body-chat {
+  background: #ffdead;
+}
+
+#body-success {
+  background: #ffdead;
+}
+
+#tableKurs {
+  align-content: center;
+  height: 80px;
+  width: 100%;
+}
+
+#card-content {
+  padding: 12px 44px;
+}
+#card-title {
+  font-family: "Raleway Thin", sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+}
+#card-content-kurs {
+  padding: 12px 44px;
+}
+#card-title-kurs {
+  font-family: "Raleway Thin", sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+}
+.underline-title {
+  background: -webkit-linear-gradient(right, #ffdead, #cd853f);
+  height: 2px;
+  margin: -1.1rem auto 0 auto;
+  width: 89px;
+}
+
+a {
+  text-decoration: none;
+}
+label {
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+}
+#forgot-pass {
+  color: #cd853f;
+  font-family: "Raleway", sans-serif;
+  font-size: 10pt;
+  margin-top: 3px;
+  text-align: right;
+}
+.form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.form-border {
+  background: -webkit-linear-gradient(right, #ffdead, #cd853f);
+  height: 1px;
+  width: 100%;
+}
+.form-content {
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+  padding-top: 14px;
+}
+
+.form-content-kurs {
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+  padding-top: 20px;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+#signup {
+  color: #cd853f;
+}

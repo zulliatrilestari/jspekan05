@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <input type="text" placeholder="Masukan Nilai" id="nilaiUang">
+  <select id="mySelect">
+    <option value="USD">DOLAR US</option>
+    <option value="SD">DOLAR SINGAPORE</option>
+    <option value="RINGGIT">RINGGIT MALAYSIA</option>
+    <option value="YEN">YEN JAPAN</option>
+    <option value="EURO">EURO</option>
+    <option value="RIYAL">Riyal Arab</option>
+  </select>
+  <input type="text" placeholder="Nila Rupiah" id="jumlahRupiah">
+</form>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var nilaiUang = document.getElementById("nilaiUang").value
+  
+  var x = document.getElementById("mySelect").value;
+  var jumlahRupiah = 0
+  if(x === "USD"){
+  	jumlahRupiah = nilaiUang*9915
+    document.getElementById("jumlahRupiah").value = 'Rp. ' + jumlahRupiah
+  }else if(x === "SD"){
+  	jumlahRupiah = nilaiUang*13472
+    document.getElementById("jumlahRupiah").value = 'Rp. ' + jumlahRupiah
+  }else if(x === "RINGGIT"){
+  	jumlahRupiah = nilaiUang*874
+    document.getElementById("jumlahRupiah").value = 'Rp. ' + jumlahRupiah
+  }else if(x === "YEN"){
+  	jumlahRupiah = nilaiUang*120
+    document.getElementById("jumlahRupiah").value = 'Rp. ' + jumlahRupiah
+  }else if(x === "EURO"){
+  	jumlahRupiah = nilaiUang*15888
+    document.getElementById("jumlahRupiah").value = 'Rp. ' + jumlahRupiah
+  }else if(x === "RIYAL"){
+  	jumlahRupiah = nilaiUang*3592
+    document.getElementById("jumlahRupiah").value = 'Rp. ' + jumlahRupiah
+  }
+}
+</script>
+</body>
+</html>
